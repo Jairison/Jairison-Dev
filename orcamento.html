@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PrimeCode | Solicitar Orçamento</title>
+
+<link rel="stylesheet" href="orcamento.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="voltar">
+<i class="fa-solid fa-arrow-left"></i>
+Voltar
+</a>
+
+<h1>Solicitar Orçamento</h1>
+
+<p>
+Conte um pouco sobre o seu projeto e entrarei em contato o mais rápido possível.
+</p>
+
+</header>
+
+<section class="container">
+
+<form id="formulario">
+
+<div class="campo">
+
+<label>Nome Completo</label>
+
+<input
+type="text"
+placeholder="Digite seu nome"
+required>
+
+</div>
+
+<div class="campo">
+
+<label>E-mail</label>
+
+<input
+type="email"
+placeholder="Digite seu e-mail"
+required>
+
+</div>
+
+<div class="campo">
+
+<label>WhatsApp</label>
+
+<input
+type="tel"
+placeholder="(99) 99999-9999"
+required>
+
+</div>
+
+<div class="campo">
+
+<label>Empresa (Opcional)</label>
+
+<input
+type="text"
+placeholder="Nome da empresa">
+
+</div>
+
+<div class="campo">
+
+<label>Tipo de Projeto</label>
+
+<select required>
+
+<option value="">Selecione</option>
+
+<option>Landing Page</option>
+
+<option>Site Institucional</option>
+
+<option>Portfólio</option>
+
+<option>Sistema Web</option>
+
+<option>Loja Virtual</option>
+
+<option>Manutenção</option>
+
+<option>Outro</option>
+
+</select>
+
+</div>
+
+<div class="campo">
+
+<label>Prazo Desejado</label>
+
+<select>
+
+<option>Sem urgência</option>
+
+<option>Até 30 dias</option>
+
+<option>15 dias</option>
+
+<option>7 dias</option>
+
+</select>
+
+</div>
+
+<div class="campo">
+
+<label>Orçamento Disponível</label>
+
+<select>
+
+<option>Até R$ 1.000</option>
+
+<option>R$ 1.000 - R$ 3.000</option>
+
+<option>R$ 3.000 - R$ 5.000</option>
+
+<option>Acima de R$ 5.000</option>
+
+</select>
+
+</div>
+
+<div class="campo">
+
+<label>Descreva seu Projeto</label>
+
+<textarea
+rows="6"
+placeholder="Explique como deseja o projeto..."
+required></textarea>
+
+</div>
+
+<button type="submit">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Enviar Solicitação
+
+</button>
+
+</form>
+
+</section>
+
+<script src="orcamento.js"></script>
+
+</body>
+</html>
