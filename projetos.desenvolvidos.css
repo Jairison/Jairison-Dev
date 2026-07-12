@@ -187,3 +187,126 @@ background:#d4af37;
 color:#111;
 
 }
+
+/* ===== Tablets ===== */
+@media (max-width: 992px){
+
+    header{
+        padding:60px 20px;
+    }
+
+    header h1{
+        font-size:40px;
+    }
+
+    .projetos{
+        padding:30px;
+        gap:25px;
+    }
+
+}
+
+/* ===== Celulares ===== */
+@media (max-width:768px){
+
+    .voltar{
+        position:static;
+        display:inline-block;
+        margin-bottom:20px;
+        font-size:16px;
+    }
+
+    header{
+        padding:40px 20px;
+    }
+
+    header h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    header p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .projetos{
+        grid-template-columns:1fr;
+        padding:20px;
+        gap:20px;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+    .conteudo{
+        padding:20px;
+    }
+
+    .conteudo h2{
+        font-size:24px;
+    }
+
+    .conteudo p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .botoes{
+        flex-direction:column;
+    }
+
+    .botoes a{
+        width:100%;
+    }
+
+}
+
+/* ===== Celulares pequenos ===== */
+@media (max-width:480px){
+
+    header h1{
+        font-size:28px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .projetos{
+        padding:15px;
+    }
+
+    .card{
+        border-radius:15px;
+    }
+
+    .card img{
+        height:180px;
+    }
+
+    .conteudo{
+        padding:18px;
+    }
+
+    .conteudo h2{
+        font-size:20px;
+    }
+
+    .conteudo p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .tecnologias span{
+        font-size:12px;
+        padding:6px 12px;
+    }
+
+    .botoes a{
+        padding:12px;
+        font-size:14px;
+    }
+
+}
