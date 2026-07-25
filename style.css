@@ -157,7 +157,8 @@ transform:translateY(0);
 }
 
 }
-@media(max-width:500px){
+
+@media (max-width: 768px){
 
 .container{
 padding:30px 22px;

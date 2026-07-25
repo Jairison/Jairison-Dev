@@ -175,3 +175,17 @@ transition:.4s;
 transform:scale(1.05);
 
 }
+
+@media (max-width: 768px){
+
+    body{
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        /* Evita problemas no Android e iPhone */
+        background-attachment: scroll;
+    }
+
+}
