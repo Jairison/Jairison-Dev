@@ -12,6 +12,7 @@ linear-gradient(rgba(10,10,10,.92),rgba(10,10,10,.92)),
 url(img/bg-1.png);
 background-size:cover;
 background-position:center;
+background-repeat: no-repeat;
 background-attachment:fixed;
 color:white;
 
