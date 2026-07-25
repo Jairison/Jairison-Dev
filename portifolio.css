@@ -9,12 +9,10 @@ body{
 
 background:
 linear-gradient(rgba(8,8,8,.92),rgba(8,8,8,.92)),
-url(background.jpg);
-
+url(img/bg-1.png);
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
-
 color:white;
 
 }
@@ -41,6 +39,7 @@ color:#d4af37;
 
 width:140px;
 margin-bottom:20px;
+border-radius: 50%;
 
 }
 

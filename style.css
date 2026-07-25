@@ -9,27 +9,21 @@ body{
 
 background:
 linear-gradient(rgba(10,10,10,.80),rgba(10,10,10,.80)),
-url(img/bg.png);
-
+url(img/bg-1.png);
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
-
 display:flex;
 justify-content:center;
 align-items:center;
-
 min-height:100vh;
 padding:30px;
-
 }
 
 .container{
-
 width:430px;
 max-width:100%;
-
-background:rgba(20,20,20,.60);
+background:transparent;
 
 backdrop-filter:blur(18px);
 
@@ -51,6 +45,7 @@ animation:fade .8s;
 
 width:200px;
 margin-bottom:20px;
+border-radius: 50%;
 
 }
 
@@ -85,60 +80,42 @@ gap:18px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-
 text-decoration:none;
-
 padding:18px 20px;
-
 border-radius:15px;
-
-background:rgba(255,255,255,.05);
+background:transparent;
 
 border:1px solid rgba(255,255,255,.08);
-
 color:#fff;
-
 transition:.35s;
+
 
 }
 
 .card:hover{
-
 background:chartreuse;
-
 color:#111;
-
 transform:translateY(-5px);
 
 }
 
 .card span{
-
 flex:1;
 text-align:left;
-
 margin-left:18px;
-
 font-weight:500;
-
 }
 
 .card i{
-
 font-size:20px;
-
 }
 
 .seta{
-
 font-size:16px;
-
 }
 
 .social{
-
 margin-top:35px;
-
 display:flex;
 justify-content:center;
 gap:25px;
@@ -146,68 +123,47 @@ gap:25px;
 }
 
 .social a{
-
 width:50px;
 height:50px;
-
 border-radius:50%;
-
 display:flex;
 justify-content:center;
 align-items:center;
-
 text-decoration:none;
-
 background:rgba(255,255,255,.05);
-
 color:#fff;
-
 font-size:22px;
-
 transition:.3s;
 
 }
 
 .social a:hover{
-
 background:chartreuse;
-
 color:#111;
-
 transform:translateY(-5px);
-
 }
 
 @keyframes fade{
 
 from{
-
 opacity:0;
 transform:translateY(40px);
-
 }
 
 to{
-
 opacity:1;
 transform:translateY(0);
-
 }
 
 }
-
 @media(max-width:500px){
 
 .container{
-
 padding:30px 22px;
-
 }
 
 h1{
-
 font-size:30px;
-
 }
 
 }

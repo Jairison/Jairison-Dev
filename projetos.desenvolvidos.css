@@ -9,12 +9,10 @@ body{
 
 background:
 linear-gradient(rgba(10,10,10,.92),rgba(10,10,10,.92)),
-url(background.jpg);
-
+url(img/bg-1.png);
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
-
 color:white;
 
 }
