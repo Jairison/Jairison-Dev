@@ -176,7 +176,6 @@ transition:.3s;
 }
 
 .social a:hover{
-background:chartreuse;
 color:#111;
 transform:translateY(-5px);
 }
