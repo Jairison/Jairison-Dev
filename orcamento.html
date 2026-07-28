@@ -3,173 +3,135 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Jairison-Dev | Solicitar Orçamento</title>
+    <title>Jairison-Dev</title>
 
-<link rel="stylesheet" href="orcamento.css">
+    <link rel="stylesheet" href="orcamento.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+    <div class="container">
 
-<a href="index.html" class="voltar">
-<i class="fa-solid fa-arrow-left"></i>
-Voltar
-</a>
+        <div class="voltar">
 
-<h1>Solicitar Orçamento</h1>
+            <button onclick="history.back()">
+                <i class="fa-solid fa-arrow-left"></i>
+                Voltar
+            </button>
 
-<p>
-Conte um pouco sobre o seu projeto e entrarei em contato o mais rápido possível.
-</p>
+        </div>
 
-</header>
+        <div class="card">
 
-<section class="container">
+            <i class="fa-solid fa-calendar-check icon"></i>
 
-<form id="formulario">
+            <h1>Orçamento</h1>
 
-<div class="campo">
+            <p>Preencha os dados abaixo.</p>
 
-<label>Nome Completo</label>
+            <form id="formulario">
 
-<input
-type="text"
-placeholder="Digite seu nome"
-required>
+                <div class="input-box">
 
-</div>
+                    <label>Nome Completo</label>
 
-<div class="campo">
+                    <input type="text" id="nome" placeholder="Seu nome" required>
 
-<label>E-mail</label>
+                </div>
 
-<input
-type="email"
-placeholder="Digite seu e-mail"
-required>
+                <div class="input-box">
 
-</div>
+                    <label>WhatsApp</label>
 
-<div class="campo">
+                    <input type="tel" id="telefone" placeholder="(85) 99999-9999" required>
 
-<label>WhatsApp</label>
+                </div>
 
-<input
-type="tel"
-placeholder="(99) 99999-9999"
-required>
+                <div class="input-box">
 
-</div>
+                    <label>Projeto Desejado</label>
 
-<div class="campo">
+                    <select id="servico">
 
-<label>Empresa (Opcional)</label>
+                        <option>Selecione</option>
 
-<input
-type="text"
-placeholder="Nome da empresa">
+                        <option>Link Page</option>
 
-</div>
+                        <option>Landing Page</option>
 
-<div class="campo">
+                        <option>Site Institucional</option>
 
-<label>Tipo de Projeto</label>
+                        <option>Portifólio</option>
 
-<select required>
+                        <option>Seistema Web</option>
 
-<option value="">Selecione</option>
+                        <option>Loja Virtual</option>
 
-<option>Landing Page</option>
+                        <option>Manutenção</option>
 
-<option>Site Institucional</option>
+                        <option>Outro</option>
 
-<option>Portfólio</option>
+                    </select>
 
-<option>Sistema Web</option>
+                </div>
 
-<option>Loja Virtual</option>
+                <div class="dupla">
 
-<option>Manutenção</option>
+                    <div class="input-box">
 
-<option>Outro</option>
+                        <label>Prazo Desejado</label>
 
-</select>
+                        <select id="orçamento">
 
-</div>
+                            <option>Até R$ 500</option>
 
-<div class="campo">
+                            <option>R$ 1.000 - R$ 3.000</option>
 
-<label>Prazo Desejado</label>
+                            <option>R$ 3.000 - R$ 5.000</option>
 
-<select>
+                            <option>Acima de R$ 5.000</option>
 
-<option>Sem urgência</option>
+                        </select>
 
-<option>Até 30 dias</option>
+                    </div>
 
-<option>15 dias</option>
+                </div>
 
-<option>7 dias</option>
+                <div class="input-box">
 
-</select>
+                    <label>Descreva Seu Projeto</label>
 
-</div>
+                    <textarea id="obs" rows="4" placeholder="Escreva alguma observação..."></textarea>
 
-<div class="campo">
+                </div>
 
-<label>Orçamento Disponível</label>
+                <button type="button" onclick="agendarWhatsApp()">
 
-<select>
+                    <i class="fa-brands fa-whatsapp"></i>
 
-<option>Até R$ 1.000</option>
+                    Enviar Solicitação
 
-<option>R$ 1.000 - R$ 3.000</option>
+                </button>
 
-<option>R$ 3.000 - R$ 5.000</option>
+            </form>
 
-<option>Acima de R$ 5.000</option>
+        </div>
 
-</select>
+    </div>
 
-</div>
-
-<div class="campo">
-
-<label>Descreva seu Projeto</label>
-
-<textarea
-rows="6"
-placeholder="Explique como deseja o projeto..."
-required></textarea>
-
-</div>
-
-<button type="submit">
-
-<i class="fa-solid fa-paper-plane"></i>
-
-Enviar Solicitação
-
-</button>
-
-</form>
-
-</section>
-
-<script src="orcamento.js"></script>
+    <script src="orcamento.js"></script>
 
 </body>
+
 </html>

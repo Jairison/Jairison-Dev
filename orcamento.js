@@ -1,43 +1,51 @@
-const formulario = document.getElementById("formulario");
-
-formulario.addEventListener("submit", function(event){
-
-event.preventDefault();
-
-alert("Solicitação enviada com sucesso! Em breve entrarei em contato.");
-
-formulario.reset();
-
-});
-
-const formulario = document.getElementById("formulario");
-
-formulario.addEventListener("submit", function(e){
+document
+.getElementById("formulario")
+.addEventListener("submit",function(e){
 
 e.preventDefault();
 
-const nome = document.querySelector('input[type="text"]').value;
-const email = document.querySelector('input[type="email"]').value;
-const telefone = document.querySelector('input[type="tel"]').value;
-const projeto = document.querySelector("select").value;
-const descricao = document.querySelector("textarea").value;
+const nome=document.getElementById("nome").value;
 
-const mensagem =
-`*NOVO ORÇAMENTO - PRIMECODE*
+const telefone=document.getElementById("telefone").value;
+
+const servico=document.getElementById("servico").value;
+
+const data=document.getElementById("data").value;
+
+const hora=document.getElementById("hora").value;
+
+const obs=document.getElementById("obs").value;
+
+const mensagem=
+`Olá! Gostaria de agendar um horário.
 
 👤 Nome: ${nome}
 
-📧 Email: ${email}
+📱 WhatsApp: ${telefone}
 
-📱 Telefone: ${telefone}
+💅 Serviço: ${servico}
 
-💻 Projeto: ${projeto}
+📅 Data: ${data}
 
-📝 Descrição:
-${descricao}`;
+🕒 Horário: ${hora}
 
-const numero = "5585982113637"; // Seu WhatsApp
+📝 Observações: ${obs}`;
 
-window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`);
+const numero="5585982113637"; // coloque seu número
+
+const url=`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+window.open(url,"_blank");
 
 });
+
+function agendarWhatsApp() {
+
+    alert("Seja muito bem-vindo!\n\nSerá um prazer te atender. Você será direcionado ao WhatsApp para realizar o seu orçamento");
+
+    window.open(
+    "https://wa.me/5585982113637?text=Olá!%20Tudo%20bem?%20Gostaria%20de%20solicitar%20um%20orçamento.%20Poderia%20me%20informar%20o%20Valor%20e%20e%20prazo%20de%20entrega?%20",
+    "_blank"
+);
+
+}
