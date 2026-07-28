@@ -94,7 +94,7 @@ transition:.35s;
 }
 
 .card:hover{
-background:chartreuse;
+background:cornflowerblue;
 color:#111;
 transform:translateY(-5px);
 
@@ -136,6 +136,43 @@ color:#fff;
 font-size:22px;
 transition:.3s;
 
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+/* GitHub */
+.social .fa-github{
+    color: #ffffff; /* Branco */
+}
+
+/* LinkedIn */
+.social .fa-linkedin{
+    color: #0A66C2;
+}
+
+/* Instagram */
+.social .fa-instagram{
+    color: #E4405F;
+}
+
+/* WhatsApp */
+.social .fa-whatsapp{
+    color: #25D366;
+}
+
+/* Efeito ao passar o mouse */
+.social a:hover{
+    transform: scale(1.15);
+    opacity: 0.8;
 }
 
 .social a:hover{
